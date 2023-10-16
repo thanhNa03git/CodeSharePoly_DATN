@@ -1,5 +1,5 @@
-// layout
-import HeaderOnly from "@/components/Layout/HeaderOnly/Header";
+// layouts
+// import HeaderOnly from "@/components/Layout/HeaderOnly/Header";
 
 // pages
 import Home from "@/pages/Home";
@@ -9,18 +9,14 @@ import CreateNewProduct from "@/pages/CreateNewProduct";
 
 
 
-// non-loggin
-const publicRoutes = [
+// non-login
+export const publicRoutes = [
     { path: '/', component:Home },
-    { path: '/myproduct', component:MyProduct },
-    { path: '/likedlist', component:LikedList },
-    { path: '/createnewproduct', component:CreateNewProduct, layout: HeaderOnly },
+    { path: '/myProduct', component: MyProduct },
+    { path: '/likedList', component: LikedList },
+    { path: '/createNewProduct', component: CreateNewProduct, layout: null},
 
 ]
 
 //request login
-const privateRoutes = [
-
-]
-
-export {publicRoutes, privateRoutes}
+export const privateRoutes = []

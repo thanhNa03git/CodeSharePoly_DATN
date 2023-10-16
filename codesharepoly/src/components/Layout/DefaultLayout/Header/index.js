@@ -1,7 +1,7 @@
 function Header() {
     return ( 
         <>
-            <Header/>
+            <h2>Header</h2>
         </>
     );
 }

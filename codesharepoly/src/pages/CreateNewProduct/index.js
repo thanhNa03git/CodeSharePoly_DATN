@@ -1,8 +1,13 @@
-
+import Header from "@/components/Layout/DefaultLayout/Header";
 
 function CreateNewProduct() {
     return ( 
-        <h2>CreateNewProduct Page</h2>
+        <>
+            <Header/>
+            <div className="content">
+                <h2>CreateNewProduct Page</h2>
+            </div>
+        </>
     );
 }
 

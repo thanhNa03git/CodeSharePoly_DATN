@@ -1,33 +1,26 @@
-// import { Fragment } from "react";
+import { Fragment } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import DefaultLayout from "./components/Layout/DefaultLayout";
 import { publicRoutes } from "./routes";
+import DefaultLayout from "./components/Layout/DefaultLayout";
+// import { Fragment } from "react";
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="App" >
         <Routes>
-          {/* <Route path="/" element = {<Home/>}/> */}
           {publicRoutes.map((route, index) => {
-            
-            let Layout = DefaultLayout
-            
-            if (route.layout){
-              Layout = route.layout
-            }else if( route.layout ===null){
-              Layout = DefaultLayout
-            }
+          // Neu layout ben file route undefined => DefaultLayout
+            const Layout = route.layout === null ? Fragment : DefaultLayout;
 
-            const Page = route.component;
-
-            return (
-              <Route  key={index}  path={route.path} element={
-                  <Layout>
-                    <Page />
-                  </Layout>
-              }/>
-            );
+            const Page = route.component
+            
+            // let Layout = DefaultLayout
+            // if(route.layout) { Layout = route.layout }
+            // else if(route.layout === null) { Layout = Fragment }
+            
+            return <Route key={index} path={route.path} element={
+                <Layout><Page/></Layout>}/>
           })}
         </Routes>
       </div>
