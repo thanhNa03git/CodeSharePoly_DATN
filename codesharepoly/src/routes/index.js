@@ -11,7 +11,7 @@ import CreateNewProduct from "@/pages/CreateNewProduct";
 
 // non-login
 export const publicRoutes = [
-    { path: '/', component:Home },
+    { path: '/', component: Home },
     { path: '/myProduct', component: MyProduct },
     { path: '/likedList', component: LikedList },
     { path: '/createNewProduct', component: CreateNewProduct, layout: null},
