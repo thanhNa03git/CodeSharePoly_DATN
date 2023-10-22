@@ -1,10 +1,29 @@
 @import 'normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+$text-color: #3e3d3d;
+$subText-color: #6c6c6c;
+
+$bg-color-btn: #ff7d04;
+$bg-color-pending: #e5c100;
+$bg-color-complete: #56d572;
+$bg-color-refuse: #e4653f;
+$bg-color-down: #5892d6;
+
+$bg-color-sub: #f5f5f5;
+
+$border-color: #b4b4b4;
+
+$breakpoint-medium: 1224px;
+$breakpoint-small: 520px;
+
+
 :root{
     --primary: #ffa500;
 }
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 html{
@@ -16,4 +35,7 @@ body{
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+    color: $text-color;
+    background-attachment: fixed;
+    letter-spacing: 0.5px;
 }

@@ -1,7 +1,7 @@
 
 function SideBar() {
     return ( 
-        <div className='container'>
+        <div className='border border-secondary'>
             <h2>SideBar</h2>
         </div>
     );

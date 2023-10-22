@@ -1,14 +1,14 @@
 import Header from "@/components/Layout/DefaultLayout/Header";
-
-function CreateNewProduct() {
+import './_create.css'
+function CreateUser() {
     return ( 
         <>
             <Header/>
             <div className="content">
-                <h2>CreateNewProduct Page</h2>
+                <h2>CreateUser Page</h2>
             </div>
         </>
     );
 }
 
-export default CreateNewProduct;
+export default CreateUser;
