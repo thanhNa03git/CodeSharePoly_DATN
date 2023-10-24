@@ -1,0 +1,25 @@
+@import '../../components/GlobalStyles/GlobalStyles.scss';
+
+.login{
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    &-container{
+        background-color: $bg-color-sub;
+        padding: 2rem;
+        margin: 0 1rem;
+        border-radius: 10px;
+        display: flex;
+        flex-direction:column ;
+        align-items: center;
+
+        .button:focus{
+            outline: none;
+        }
+    }
+    img{
+        width: 140px;
+        height: 30px;
+        object-fit: contain;
+    }
+}

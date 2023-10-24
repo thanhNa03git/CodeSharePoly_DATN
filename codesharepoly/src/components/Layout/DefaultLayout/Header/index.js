@@ -6,7 +6,7 @@ import "./header.scss";
 
 function Header({ handlerToggleSideBar }) {
     return (
-        <div className="header border border-danger">
+        <div className="header">
         <div className="header-sidebar">
             <MenuIcon
             className="header-menu"

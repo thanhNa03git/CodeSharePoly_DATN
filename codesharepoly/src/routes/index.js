@@ -4,15 +4,17 @@
 // pages
 import CreateUser from "@/pages/CreateUser";
 import DataReport from "@/pages/DataReport";
-import Home from "@/pages/Home";
+import Help from "@/pages/Help";
+import LoginScreen from "@/pages/LoginScreen";
 import UserManage from "@/pages/UserManage";
 
 // non-login
 export const publicRoutes = [
-    { path: '/', component: Home },
-    { path: '/userManage', component: UserManage },
+    { path: '/', component: UserManage },
+    { path: '/login', component: LoginScreen },
     { path: '/report', component: DataReport },
     { path: '/createUser', component: CreateUser, layout: null},
+    { path: '/help', component: Help },
 ]
 
 //request login
